@@ -10,4 +10,5 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Run Tests
-        run: node src/testScript.js
+        run: npm test
+
