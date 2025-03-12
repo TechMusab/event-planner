@@ -1,6 +1,6 @@
 const { describe, it, expect } = require('@jest/globals');
 const request = require("supertest");
-const app = require("../server");
+const {app} = require("../server");
 
 describe("Event API Tests", () => {
     it("should create a new event", async () => {
@@ -16,4 +16,7 @@ describe("Event API Tests", () => {
         expect(res.statusCode).toBe(200);
         expect(Array.isArray(res.body)).toBe(true);
     });
+});
+afterAll(() => {
+    app.close(); 
 });
