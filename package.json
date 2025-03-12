@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "node src/testScript.js"
+    "test": "mocha src/testScript.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "jest": "^29.7.0",
+    "mocha": "^11.1.0",
     "supertest": "^7.0.0"
   }
 }
