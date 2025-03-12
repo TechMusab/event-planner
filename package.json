@@ -5,6 +5,10 @@
   "scripts": {
     "test": "jest"
   },
+  "jest": {
+    "testMatch": ["**/src/__tests__/**/*.test.js"]
+  }
+,  
   "keywords": [],
   "author": "",
   "license": "ISC",
